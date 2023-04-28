@@ -1,31 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> My Page Title here </title>
+        <!-- Adding CSS -->
+        <link rel="stylesheet" href="style.css"/>
+
+        <title>Fitness and Sport</title>
     </head>
 
 
     <body>
-        <h1> Main Page. </h1>
+        <div class="container">
 
-        <!-- Second page reference -->
-        <p> would like to go to the <a href="second.html">second page</a>?</p>
-        
-        <!-- adding image with alt attribute -->
-        <img src="media/images/crossfit_img_1.webp" alt="A woman doing Battle Rope exercise" width="450" height="380">
+            <!-- Header section -->
+            <header>
+                <img src="media/images/fitness_logo.png" alt="Logo: an athlete holds dumbbells in both hands" class="logo">
+                <!-- Image by Mohamed Hassan from Pixabay https://pixabay.com/vectors/fitness-gym-logo-club-man-symbol-7750665/ -->
 
-        <p>
-        <b>Fitness</b> and <b>Sport</b> play a vital role in improving our physical and mental health. Engaging in regular exercise can help prevent chronic diseases, improve cardiovascular health, enhance cognitive function, reduce stress, and promote overall well-being.
-        </p>
-        
-        <input type="email" placeholder="Your email">
-        <input type="submit">
-        
+                <!-- Navigation area -->
+                <nav class="nav_menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Exercises</a></li>
+                    </ul>
+                </nav>
+                <div class="fix_position"></div>
+            </header>
 
+            <!-- This area contains the main content of the website -->
+            <main>
+                <section class="section_left">
+                    <article>
+                        <h1> Fitness and Sport </h1>
+                        <p>
+                            <strong>Fitness</strong> and <strong>Sports</strong> are important for maintaining and enhancing overall well-being. Exercising regularly can help us live a longer, healthier, and happier life by lowering risk of developing or aggravating a variety of chronic conditions. Keeping active on a consistent basis is essential for preventing obesity and maintaining a healthy weight. Weight loss and improved body composition can be achieved through regular physical activity because it helps burn calories, promotes the development of lean muscle, and speeds up the metabolism. It lowers the likelihood of developing type 2 diabetes by improving both blood sugar control and insulin sensitivity.
+                        </p>
+
+                        <p>
+                            In addition to the health benefits, sports and active play can also provide social advantages. Participating in a sport or attending a fitness class can assist in the development of social connections, the enhancement of communication abilities, and the cultivation of a sense of community and belonging.
+                        </p>
+
+                        <p>
+                            Participating in athletics and other fitness activities can, in addition to their positive effects on one's body and mind, be extremely entertaining and enjoyable. It provides a sense of achievement, a sense of personal growth, and a sense of overall challenge, all of which can contribute to an overall sense of satisfaction and happiness in life.
+                        </p>
+
+                        <p>
+                            In conclusion, consistent physical activity and participation in sports are required for leading a healthy lifestyle, which is important for lowering the risk of developing chronic diseases, enhancing mental health, and providing both personal and social benefits. It is possible for us to live a life that is healthier, happier, and more fulfilling if we make regular physical activity a part of our routines.
+
+                        </p>
+
+                    </article>       
+                </section>
+
+                <!-- Sidebar section -->
+                <aside class="aside_right">               
+                    <div>
+                        <article>
+                            <h4> Cardiovascular Exercise </h4>
+                            <p>
+                                Strengthening and improving the efficiency of the heart muscle is one of the primary benefits of cardiovascular exercise, which includes activities such as running, cycling, and swimming. The likelihood of developing cardiovascular diseases like heart attacks, strokes, and high blood pressure is decreased as a result of this.
+                            </p>
+                            <!-- adding image with alt attribute -->
+                            <img src="media/images/crossfit_img_1.webp" alt="A woman doing Battle Rope exercise" width="290" height="270">
+                            <!-- https://static.wixstatic.com/media/e6827f_5cfe977111784cbdbdfa93524e16f6ca~mv2.png/v1/fill/w_1178,h_658,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/rutina-amrap-entrenamiento-crossfit.png -->
+                            
+                        </article>
+
+                    </div>
+                    <div id="links">
+                        <h4>More about cardio</h4>
+                        <ul>
+                            <li><a href="https://www.verywellfit.com/everything-you-need-to-know-about-cardio-1229553">VeryWellFit</a></li>
+                            <li><a href="https://www.everydayhealth.com/fitness/workouts/why-you-need-aerobic-exercise.aspx">EverydayHealth</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </main>
+
+            <!-- Footer of the page -->
+            <footer class="page_footer">
+
+                <div id="top_footer">
+                    <h4>Subscribe to articles</h4>
+                    <form>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                
+                <div id="bottom_footer">
+                    <p>&copy; Copyright 2023. Developed by Rashad TGr, CS Student at Universoty of Liverpool.</p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
 

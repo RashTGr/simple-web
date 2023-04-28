@@ -1,0 +1,168 @@
+/* Remove the default padding and margins */
+/* Select all the elements on the webpage */
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none; /* Removes bullet points */
+    font-family: "Cambria";
+}
+
+/* All of the latest elements will appear as blocks in all browsers. */
+header, footer, nav, article, aside, section {
+    display: block;
+}
+
+/* Adjust the page's center */
+.container {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* Parameters for logo on the page */
+.logo{
+    width: 120px;
+    height: 90px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 25px;
+    padding: 10px;
+    padding-left: 0%;
+}
+
+/* To avoid header floating around the images */
+.fix_position{
+    clear: both;
+}
+
+/* Adjust position of navigation menu */
+.nav_menu ul li {
+    float: left;
+    padding: 44px 20px; /*top, right*/
+} 
+
+/* Positions of main and aside blocks */
+.section_left{
+    float: left;
+    max-width: 700px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* Margins for Article that is child of Section tag*/
+.section_left article{
+    margin-right: 35px;
+    padding: 10px;
+    padding-left:unset;
+}
+
+/* Add line spacing to the links */
+.section_left p{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* Center header */
+.section_left h1{
+    text-align: center;
+    padding: 2px;
+}
+
+.aside_right{
+    float: right;
+    max-width: 300px;
+    text-align: justify;
+    padding-top: 30px;
+  
+}
+
+/* Margins for div tags that are children of Aside tag*/
+.aside_right div{
+    margin: 0px 10px 10px 0px; /*top, right, bottom, left */
+    padding: 5px;
+    padding-top: 10px;
+}
+
+
+/* Add line spacing to the links */
+#links a{
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* State of links while interaction */
+a:active{
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover{
+    text-decoration:wavy;
+    color: #cf3030;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+/* Fix position of footer on the page */
+.page_footer{
+    clear: both;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 7px 10px 7px; /*top, right, bottom, left*/
+    display: flex;
+}
+
+/* Style for the top of the footer where the subscription form */
+#top_footer{
+    margin-bottom: 25px;
+}
+
+#top_footer h4{
+    margin-bottom: 7px;
+}
+
+#top_footer button[type="submit"]{
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+#top_footer input[type="email"]{
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+
+}
+
+
+/* Button state while interaction */
+button:active{
+    color: blue;
+    text-decoration: underline;
+}
+
+button:hover{
+    background-color:#706c6c;
+    text-decoration:wavy;
+    color: whitesmoke;
+}
+
+button:visited{
+    color: blueviolet;
+}
+
+
+/* Style for the bottom of the footer with the copyright */
+#bottom_footer{
+    font-size: 12px;
+    text-align: right;
+}
+
+
