@@ -3,30 +3,40 @@
 *{
     margin: 0px;
     padding: 0px;
-    list-style-type: none; /* Removes bullet points */
     font-family: "Cambria";
 }
+
+/* High contrast color scheme for improved readability */
+body{
+    color: #333;
+    background-color: #fff;
+}
+
 
 /* All of the latest elements will appear as blocks in all browsers. */
 header, footer, nav, article, aside, section {
     display: block;
+    
 }
+
 
 /* Adjust the page's center */
 .container {
-    width: 1000px;
-    margin: 0px auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 /* Parameters for logo on the page */
 .logo{
-    width: 120px;
-    height: 90px;
+    width: 15%;
+    max-width: 120px;
+    height: auto;
     float: left;
-    margin-right: 17px;
+    margin-right: 2%;
     margin-bottom: 25px;
-    padding: 10px;
-    padding-left: 0%;
+    padding: 1%;
+    
 }
 
 /* To avoid header floating around the images */
@@ -37,22 +47,22 @@ header, footer, nav, article, aside, section {
 /* Adjust position of navigation menu */
 .nav_menu ul li {
     float: left;
-    padding: 44px 20px; /*top, right*/
+    padding: 2.7% 2%; /*top, right*/
+    list-style-type: none; /* Removes bullet points */
 } 
 
 /* Positions of main and aside blocks */
 .section_left{
     float: left;
-    max-width: 700px;
+    max-width: 70%;
     text-align: justify;
     font-size: 17px;
 }
 
 /* Margins for Article that is child of Section tag*/
 .section_left article{
-    margin-right: 35px;
-    padding: 10px;
-    padding-left:unset;
+    margin-right: 5%;
+    padding: 1%;
 }
 
 /* Add line spacing to the links */
@@ -70,19 +80,31 @@ header, footer, nav, article, aside, section {
 
 .aside_right{
     float: right;
-    max-width: 300px;
+    max-width: 30%;
     text-align: justify;
-    padding-top: 30px;
-  
+    padding-top: 1.7%;
 }
 
 /* Margins for div tags that are children of Aside tag*/
 .aside_right div{
-    margin: 0px 10px 10px 0px; /*top, right, bottom, left */
-    padding: 5px;
-    padding-top: 10px;
+    margin: 0 27% 5% 0; /*top, right, bottom, left */
+    padding: 1%;
+    padding-top: 2%;
 }
 
+#links ul{
+    list-style-type: none; /* Removes bullet points */
+}
+
+#bullet_point{
+    display: inline-block;
+    list-style-position:inside;
+    padding: 10px;
+}
+
+#bullet_point p{
+    padding-bottom: 10px;
+}
 
 /* Add line spacing to the links */
 #links a{
@@ -92,6 +114,7 @@ header, footer, nav, article, aside, section {
     font-size: 14px;
     text-decoration: none;
 }
+
 
 /* State of links while interaction */
 a:active{
@@ -114,8 +137,10 @@ a:visited{
     flex-direction: column;
     background-color: #333;
     color: #fff;
-    padding: 10px 7px 10px 7px; /*top, right, bottom, left*/
+    padding: 1% 2% 1% 1%; /*top, right */
     display: flex;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 /* Style for the top of the footer where the subscription form */
@@ -138,7 +163,6 @@ a:visited{
     border: none;
     border-radius: 3px;
     padding: 3px;
-
 }
 
 
@@ -166,3 +190,28 @@ button:visited{
 }
 
 
+/* Padding of 2% when the screen size is 768px or less */
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 2%;
+    }
+}
+
+
+/* To center the video object horizontally*/
+#videos{
+    display: block; /* to ensure a block-level element*/
+    margin: 0 auto;
+}
+
+#audio{
+    display: block; /* to ensure a block-level element*/
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+#media_title{
+    margin-top: 4%;
+    text-align: left;
+
+}

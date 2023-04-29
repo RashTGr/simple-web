@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adding CSS -->
+        <link rel="stylesheet" href="style.css"/>
+
+        <title>Types of Exercises</title>
+    </head>
+
+
+    <body>
+        <div class="container">
+
+            <!-- Header section -->
+            <header>
+                <img src="media/images/fitness_logo.png" alt="Logo: an athlete holds dumbbells in both hands" class="logo">
+                <!-- Image by Mohamed Hassan from Pixabay https://pixabay.com/vectors/fitness-gym-logo-club-man-symbol-7750665/ -->
+
+                <!-- Navigation area -->
+                <nav class="nav_menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fitness.html">Fitness</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+                <div class="fix_position"></div>
+            </header>
+
+            <!-- This area contains the main content of this page -->
+            <main>
+                <!-- Main paragraph area-->
+                <section class="section_left">
+                    <article>
+                        <h1>The most common types of Exercises</h1>
+                        <p>
+                            There is a wide variety of physical activity, each of which focuses on a different area of the body and offers a different set of advantages. A distinction can be made between different types of workouts on the basis of the benefits they promise to deliver. For example, aerobic exercise focuses on improving cardiovascular health and endurance, whereas strength training focuses on building and maintaining muscle strength and mass. Both types of exercise are important for overall health. You can improve your overall fitness level as well as achieve a well-rounded and balanced workout if you include a variety of different types of exercises in your workout routine.
+                        </p>
+                    </article>
+
+                    <!-- Adding media right after the text section on the second page -->
+                    <p id="media_title">Animated video of a <strong>dumbbell curtsy lunge</strong> being performed as part of a fitness workout: </p>
+                    <video id="videos" controls preload="auto" width="640" height="360">
+                        <source src="media/videos/workoutAnimation.mp4" title="A woman doing exercise with dumbbells" type="video/mp4"/>
+                        <!-- https://www.vecteezy.com/video/20940072-dumbbell-curtsy-lunge-fitness-exercise-workout-animation-video-male-muscle-highlight-4k-60-fps-->
+                        
+                        <!--The following option will appear if the user's browser does not recognize the required video format-->
+                        Your browser does not support the MP4 video format. Get the <a href="media/videos/workoutAnimation.mp4"> MP4 video</a>
+                    </video>
+
+                    <audio id="audio" controls preload="auto">
+                        <!-- Three formats for the audio file to ensure that the audio can be played by a wider range of browsers -->
+                        <source src="media/audio/audioDescription.mp3" type="audio/mpeg"/>
+                        <source src="media/audio/audioDescription.ogg" type="audio/ogg"/>
+                        <source src="media/audio/audioDescription.wav" type="audio/wav"/>
+
+                        <!-- This notice will appear if the user's browser does not recognize the required audio format. -->
+                        Your browser does not support the MP3, OGG and WAV audio formats. Please update your browser.
+                    </audio>
+                </section>
+                
+                <!-- Sidebar section -->
+                <aside class="aside_right">               
+                    <div>
+                        <article>
+                            <h4> Exercise Categories  </h4>
+                            <p>
+                                Different exercises have different benefits because they target different muscle groups. There are four categories of physical activity and exercise:
+                                <ul id="bullet_point">
+                                    <li><strong>Endurance</strong></li>
+                                    <p>Both your heartbeat and breathing will speed up during endurance training, which is also known as aerobic exercise <a href="https://www.medicalwesthospital.org/lets-get-moving.php">Read more..</a></p>
+                                    
+                                    <li><strong>Strength</strong></li>
+                                    <p> Strength exercises are ideal if your goal is to gain muscle mass. "Strength training" or "resistance exercise" are other names for strength exercises <a href="https://www.medicalwesthospital.org/lets-get-moving.php">Read more..</a></p>
+
+
+                                    <li><strong>Flexibility</strong></li>
+                                    <p> Flexibility exercises help us maintain a flexible body by stretching our muscles. This frees up our body for other workouts and general activities. 
+                                        <a href="https://www.self.com/gallery/essential-stretches-slideshow">Read more..</a>
+                                    <img src="media/images/women_streching.png" alt="A woman stretching" width="230" height="260">
+                                    <!-- Photo by Dane Wetton on Unsplash https://unsplash.com/photos/t1NEMSm1rgI-->
+                                    </p>
+
+                                    <li><strong>Balance</strong></li>
+                                    <p> By strengthening our sense of balance, we can feel safer and more confident on our feet. As we age, the systems that help us keep our balance — our leg muscles and joints — tend to break down, making this a particularly pressing issue <a href="https://www.health.harvard.edu/staying-healthy/easy-ways-to-improve-your-balance">Read more..</a></p>
+                                </ul>
+                            </p>
+                            
+                        </article>
+
+                    </div>
+                
+                </aside>
+            </main>
+
+            <!-- Footer of the page -->
+            <footer class="page_footer">
+
+                <div id="top_footer">
+                    <h4>Subscribe to articles</h4>
+                    <form>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                
+                <div id="bottom_footer">
+                    <p>&copy; Copyright 2023. Developed by Rashad TGr, CS Student at Universoty of Liverpool.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+
