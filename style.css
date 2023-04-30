@@ -11,8 +11,12 @@
 body{
     color: #333;
     background-color: #fff;
+    font-size: 1em;
 }
 
+body header{
+    font-size: large;
+}
 
 /* All of the latest elements will appear as blocks in all browsers. */
 header, footer, nav, article, aside, section {
@@ -25,6 +29,7 @@ header, footer, nav, article, aside, section {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 2%;
+
 }
 
 
@@ -59,7 +64,7 @@ header, footer, nav, article, aside, section {
     float: left;
     max-width: 70%;
     text-align: justify;
-    font-size: 17px;
+    font-size: 1.1em;
 }
 
 
@@ -123,7 +128,7 @@ header, footer, nav, article, aside, section {
     display: inline-block;
     margin-bottom: 3px;
     margin-top: 3px;
-    font-size: 14px;
+    font-size: 1.1em;
     text-decoration: none;
 }
 
@@ -143,6 +148,10 @@ a:visited{
     color: blueviolet;
 }
 
+/* To ensure that keyboard-only users can see which link they are currently focused on*/
+a:focus {
+    outline: 2px solid #0066ff;
+    }
 
 /* Fix position of footer on the page */
 .page_footer{
@@ -152,7 +161,7 @@ a:visited{
     color: #fff;
     padding: 1% 2% 1% 1%; /*top, right */
     display: flex;
-    font-size: 14px;
+    font-size: 1.1em;
     border-radius: 5px;
 }
 
@@ -199,7 +208,7 @@ button:visited{
 
 /* Style for the bottom of the footer with the copyright */
 #bottom_footer{
-    font-size: 12px;
+    font-size: 0.7em;
     text-align: right;
 }
 
@@ -236,7 +245,7 @@ button:visited{
     text-align: justify;
     margin: 7%;
     margin-top: 2%;
-    font-size: 15px;
+    font-size: 1em;
     font-style: italic;
 }
 
@@ -266,7 +275,7 @@ button:visited{
     padding-bottom: 1%;
     padding-right: 17%;
     text-align: justify;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 
